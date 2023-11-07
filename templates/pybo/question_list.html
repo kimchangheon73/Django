@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
 {% if question_list %}
     {% for question in question_list %}
     <li>
@@ -7,4 +9,5 @@
 {% endif %}
 <hr>
 <a href="{% url 'pybo:question_create' %}">질문 등록하기</a>
+{% endblock %}
 

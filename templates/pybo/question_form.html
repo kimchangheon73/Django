@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
 <h5>질문등록 폼</h5>
 
 <form action= 'pybo:question_create' method="post">
@@ -7,3 +9,4 @@
     <textarea name="content" id="content" cols="30" rows="10"></textarea>
     <button type="submit">저장하기</button>
 </form>
+{% endblock %}

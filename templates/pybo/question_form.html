@@ -1,0 +1,10 @@
+<h5>질문등록 폼</h5>
+
+<form method="post">
+    {% csrf_token %}
+    <div>주제 <textarea name="subject" id="subject" cols="30" rows="1"></textarea></div>
+    <div>내용</div>
+    <textarea name="content" id="content" cols="30" rows="10"></textarea>
+    <button type="submit">저장하기</button>
+
+</form>
